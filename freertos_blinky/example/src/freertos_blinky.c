@@ -1,6 +1,8 @@
 /*
  * @brief FreeRTOS Blinky example
  *
+ *Edited by Harsh Dadwal(731805) and Abhishek Parikhh(732182)
+ *
  * @note
  * Copyright(C) NXP Semiconductors, 2014
  * All rights reserved.
@@ -77,7 +79,7 @@ static void vLEDTask1(void *pvParameters) {
 		Chip_GPIO_WritePortBit(LPC_GPIO, 3, 26, 0);
 		Delay();
 		Chip_GPIO_WritePortBit(LPC_GPIO, 3, 26, 1);
-												Delay();
+		Delay();
 	}
 }
 

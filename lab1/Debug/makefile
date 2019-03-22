@@ -29,7 +29,7 @@ all: lab1.axf
 lab1.axf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU Linker'
-	arm-none-eabi-gcc -nostdlib -L"/home/harsh/Documents/MCUXpresso_10.3.1_2233/workspace/lpc_board_nxp_lpcxpresso_1769/Debug" -L"/home/harsh/Documents/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/Debug" -Xlinker -Map="lab1.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "lab1_Debug.ld" -o "lab1.axf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-gcc -nostdlib -L"/home/harsh/MCUX/lpc_board_nxp_lpcxpresso_1769/Debug" -L"/home/harsh/MCUX/lpc_chip_175x_6x/Debug" -Xlinker -Map="lab1.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "lab1_Debug.ld" -o "lab1.axf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 	$(MAKE) --no-print-directory post-build

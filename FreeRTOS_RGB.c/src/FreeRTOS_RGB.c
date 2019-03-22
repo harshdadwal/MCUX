@@ -77,15 +77,15 @@ static void vLEDTask2(void *pvParameters) {
 		Chip_GPIO_WritePortBit(LPC_GPIO, 0, 22, 0);
 		Delay();
 		Chip_GPIO_WritePortBit(LPC_GPIO, 0, 22, 1);
-				Delay();
-				Chip_GPIO_WritePortBit(LPC_GPIO, 3, 26, 0);
-						Delay();
-						Chip_GPIO_WritePortBit(LPC_GPIO, 3, 26, 1);
-								Delay();
-								Chip_GPIO_WritePortBit(LPC_GPIO, 3, 25, 0);
-										Delay();
-										Chip_GPIO_WritePortBit(LPC_GPIO, 3, 25, 1);
-												Delay();
+		Delay();
+		Chip_GPIO_WritePortBit(LPC_GPIO, 3, 25, 0);
+		Delay();
+		Chip_GPIO_WritePortBit(LPC_GPIO, 3, 25, 1);
+		Delay();
+		Chip_GPIO_WritePortBit(LPC_GPIO, 3, 26, 0);
+		Delay();
+	    Chip_GPIO_WritePortBit(LPC_GPIO, 3, 26, 1);
+	    Delay();
 	}
 }
 
